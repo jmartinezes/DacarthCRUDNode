@@ -1,0 +1,11 @@
+<%- include('header') -%>
+	<h1>Resultados de la búsqueda</h1>
+	<ul>
+		<% productos.forEach(function(producto) { %>
+			<li><%= producto.Nombre %> - <%= producto.Descripcion %></li>
+		<% }); %>
+	</ul>
+  <%- include('footer') -%>
+</html>
+
+  
